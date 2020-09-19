@@ -1,0 +1,124 @@
+$container: #2a4679;
+$words: rgb(245, 240, 240);
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+/* MIX */
+@mixin margin($left,$right) {
+    margin-left: $left;
+    margin-right: $right;
+}
+
+/* EXTENDS */
+.container {
+    background-color: $container;
+    width: 100%;
+    color: $words;
+    display: flex;
+
+    a {
+        text-decoration: none;
+        color: $words;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+.header__elements {
+    margin-bottom: 10px;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+
+/* HEADER */
+.header {
+    @extend .container;
+    align-items: center;
+    box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    height: 70px;
+    justify-content: space-between;
+}
+
+.header__title {
+    @extend .header__elements;
+    margin-left: 10px;
+    @include margin(50px,0px);
+}
+
+.header__github {
+    @extend .header__elements;
+    @include margin(0px,50px);
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+}
+
+.header__github--img {
+    margin-right: 5px;
+    width: 50px;
+}
+
+/* RESUME */
+.resume {
+    @extend .main;
+    background-color:rgba(191, 191, 191, 0.35);
+}
+.resume__description{
+    @include margin(0px,50px);
+    width: 40%;
+    text-align: center;
+}
+.resume__description--title{
+    margin-bottom: 30px;
+}
+.resume__description--paragraph{
+    letter-spacing: 1px;
+}
+
+.resume__image{
+    width: 10%;
+}
+
+/* IMAGES */
+.images{
+    @extend .main;
+}
+.images__card{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    height: 350px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.images__card--character{
+    border:1px solid black;
+    width:250px;
+    height: 250px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.images__card--mainDescription{
+    margin-left:20px ;
+}
+
+/* FOOTER */
+.footer {
+    @extend .container;
+    align-items: center;
+    bottom: 0px;
+    height: 50px;
+}

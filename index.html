@@ -4,15 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API-RickAndMorty</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css"> 
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet"> 
+    <!-- JS -->
     <script src="js/index.js"></script>
 </head>
 <body>
     <header class="header">
-
+        <div class="header__title">
+            <h1>Rick and Morty</h1>
+        </div>
+        <div class="header__github">
+            <img src="img/github.svg" alt="Github Icon" class="header__github--img">
+            <a href="#">Repository</a>
+        </div>
     </header>
-    <section class="section">
-
+    <section class="resume">
+        <div class="resume__description">
+            <h2 class="resume__description--title">
+                What is it?
+            </h2>
+            <p class="resume__description--paragraph">
+                This is just a project using SCSS, JavaScript Asynchronism and <a href="https://rickandmortyapi.com/" target="__blank">Rick and Morty's API</a>, 
+                applying all the knowledge learned in <a href="https://platzi.com/@leonelmoyanoo/" target="__blank">Platzi</a>
+            </p>
+        </div>
+        <div class="resume__image">
+            <img id="randomImage" src="https://rickandmortyapi.com/api/character/avatar/38.jpeg" alt="Random Image">
+        </div>
+    </section>
+    <section class="images">
+        <div class="images__card">
+            <img src="https://rickandmortyapi.com/api/character/avatar/38.jpeg" class="images__card--character" alt="Image 1">
+            <div class="images__card--mainDescription">
+                <p class="images__card--mainDescription--name">Name: </p>
+                <p class="images__card--mainDescription--universe">Universe: </p>
+            </div>
+        </div>
     </section>
     <footer class="footer">
 
