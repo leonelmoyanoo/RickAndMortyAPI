@@ -1,0 +1,11 @@
+{
+  "name": "apirickandmorty",
+  "version": "1.0.0",
+  "description": "Jugando con la api de rick and morty",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Leonel Moyano",
+  "license": "MIT"
+}
