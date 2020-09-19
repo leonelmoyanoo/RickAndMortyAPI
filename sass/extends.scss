@@ -1,0 +1,27 @@
+
+/* EXTENDS */
+.container {
+    background-color: $container;
+    width: 100%;
+    color: $words;
+    display: flex;
+
+    a {
+        text-decoration: none;
+        color: $words;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+.header__elements {
+    margin-bottom: 10px;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}

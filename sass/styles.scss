@@ -1,45 +1,12 @@
-$container: #2a4679;
-$words: rgb(245, 240, 240);
+@import "./variables.scss";
+@import "./mix.scss";
+@import "./extends.scss";
 
 * {
     padding: 0px;
     margin: 0px;
     font-family: "Source Sans Pro", sans-serif;
 }
-
-/* MIX */
-@mixin margin($left,$right) {
-    margin-left: $left;
-    margin-right: $right;
-}
-
-/* EXTENDS */
-.container {
-    background-color: $container;
-    width: 100%;
-    color: $words;
-    display: flex;
-
-    a {
-        text-decoration: none;
-        color: $words;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-}
-.header__elements {
-    margin-bottom: 10px;
-}
-
-.main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-}
-
 
 /* HEADER */
 .header {
