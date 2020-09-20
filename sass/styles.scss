@@ -1,12 +1,14 @@
 @import "./variables.scss";
 @import "./mix.scss";
 @import "./extends.scss";
+@import "./utils.scss";
 
 * {
     padding: 0px;
     margin: 0px;
     font-family: "Source Sans Pro", sans-serif;
     text-decoration: none;
+    transition: all 0.5s;
 }
 
 /* HEADER */
@@ -21,12 +23,12 @@
 .header__title {
     @extend .header__elements;
     margin-left: 10px;
-    @include margin(50px,0px);
+    @include margin(50px, 0px);
 }
 
 .header__github {
     @extend .header__elements;
-    @include margin(0px,50px);
+    @include margin(0px, 50px);
     align-items: center;
     display: flex;
     font-size: 14px;
@@ -40,36 +42,44 @@
 /* RESUME */
 .resume {
     @extend .main;
-    background-color:rgba(191, 191, 191, 0.35);
+    background-color: rgba(191, 191, 191, 0.35);
 }
-.resume__description{
-    @include margin(0px,50px);
+
+.resume__description {
+    @include margin(0px, 50px);
     width: 40%;
     text-align: center;
 }
-.resume__description--title{
+
+.resume__description--title {
     margin-bottom: 30px;
 }
-.resume__description--paragraph{
+
+.resume__description--paragraph {
     letter-spacing: 1.1;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
 }
-.resume__description--paragraph a{
+
+.resume__description--paragraph a {
     text-decoration: underline;
     color: black;
 }
-.resume__description--paragraph a,em{
+
+.resume__description--paragraph a,
+em {
     font-weight: bold;
 }
-.resume__image{
+
+.resume__image {
     width: 10%;
 }
 
 /* IMAGES */
-.images{
+.images {
     @extend .main;
 }
-.images__card{
+
+.images__card {
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.2);
     height: 350px;
@@ -77,17 +87,52 @@
     display: flex;
     flex-direction: column;
 }
-.images__card--character{
-    border:1px solid black;
-    width:250px;
+
+/* IMAGE CHARACTER AND DATA */
+.images__card--character {
+    display: none;
+    border: 1px solid black;
+    width: 250px;
     height: 250px;
-    margin: 20px;
+    margin: $marginCard;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
-.images__card--mainDescription{
-    margin-left:20px ;
+
+.images__card--mainDescription {
+    margin-left: $marginCard;
+}
+
+/* IMAGE ALL DATA */
+
+.images_card--allData {
+    transform: rotateY(180deg);
+    margin-top: $marginCard;
+    margin-left: $marginCard;
+    position: absolute;
+    opacity: 0;
+}
+
+.images_card--allData--origin--title~p {
+    margin-left: 10px;
+}
+.images_card--allData p {
+    margin-bottom: 2px;
+}
+
+/* ROTATE IN / ROTATE OUT */
+
+.images__card>.images__card--character:hover {
+    @extend .rotateOut;
+}
+
+.images__card--character:hover+div {
+    @extend .rotateOut;
+}
+
+.images__card--character:hover~.images_card--allData {
+    @extend .rotateIn;
 }
 
 /* FOOTER */
@@ -98,9 +143,11 @@
     bottom: 0px;
     height: 50px;
 }
-.footer__social a{
+
+.footer__social a {
     margin: 10px;
 }
-.footer__social a:hover{
+
+.footer__social a:hover {
     text-decoration: none;
 }
