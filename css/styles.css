@@ -91,7 +91,7 @@
 .resume__description {
   margin-left: 0px;
   margin-right: 50px;
-  width: 40%;
+  width: 50%;
   text-align: center;
 }
 
@@ -141,6 +141,10 @@ em {
   align-items: center;
 }
 
+.images__card--character:hover {
+  cursor: pointer;
+}
+
 .images__card--mainDescription {
   margin-left: 20px;
   margin-right: 20px;
@@ -152,6 +156,10 @@ em {
   margin: 20px;
   width: 310px;
   height: 360px;
+}
+
+.images__card--allData:hover {
+  cursor: pointer;
 }
 
 .images__card--allData p {
@@ -195,6 +203,7 @@ em {
   .resume__description {
     margin-left: 0px;
     margin-right: 0px;
+    width: 90%;
   }
 }
 

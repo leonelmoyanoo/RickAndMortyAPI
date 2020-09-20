@@ -44,7 +44,7 @@
 
 .resume__description {
     @include margin(0px, 50px);
-    width: 40%;
+    width: 50%;
     text-align: center;
 }
 
@@ -94,6 +94,9 @@ em {
     justify-content: center;
     align-items: center;
 }
+.images__card--character:hover {
+    cursor: pointer;
+}
 
 .images__card--mainDescription {
     @include margin($marginCard, $marginCard);
@@ -106,6 +109,9 @@ em {
     margin: $marginCard;
     width: $widthCardText;
     height: $heightCardText;
+}
+.images__card--allData:hover {
+    cursor: pointer;
 }
 .images__card--allData p{
     margin-bottom: 5px;
@@ -148,5 +154,6 @@ em {
 
     .resume__description {
         @include margin(0px, 0px);
+        width:90%;
     }
 }
