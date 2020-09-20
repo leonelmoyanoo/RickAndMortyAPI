@@ -75,7 +75,17 @@
 }
 
 .resume__description--paragraph {
-  letter-spacing: 1px;
+  letter-spacing: 1.1;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.resume__description--paragraph a {
+  text-decoration: underline;
+  color: black;
+}
+
+.resume__description--paragraph a, em {
+  font-weight: bold;
 }
 
 .resume__image {
