@@ -1,9 +1,10 @@
-var fetchUrl = require("fetch").fetchUrl;
-let CHARACTERS = require("./utils/randomArray")();
+let CHARACTERS = characters;
 const API = "https://rickandmortyapi.com/api/character/:id";
 
-CHARACTERS.forEach(character => {
-    fetchUrl(API.replace(":id", character), function (error, meta, body) {
-        console.log(JSON.parse(body));
-    });
+
+
+CHARACTERS.forEach(async(character) => {
+
+            const response = await fetch(`https://rickandmortyapi.com/api/character/`)
+            console.log(response);
 });

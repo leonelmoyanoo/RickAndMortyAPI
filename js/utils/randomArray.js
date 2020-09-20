@@ -9,5 +9,3 @@ characters = characters.map(character=>{
     return character==0?1:character;
 });
 
-
-module.exports = () => characters;
