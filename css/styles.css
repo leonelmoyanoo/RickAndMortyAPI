@@ -1,9 +1,22 @@
-.hide {
-  visibility: hidden;
-  opacity: 0;
+/* CHARACTER'S CARDS */
+.descriptionIn {
+  background-color: rgba(191, 191, 191, 0.35);
+  box-shadow: 5px 10px 10px 5px black;
 }
 
-.show {
+.descriptionOut {
+  box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* EFECTS */
+.rotateOut {
+  transform: rotateY(180deg);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.rotateIn {
+  transform: rotateY(0deg);
   visibility: visible;
   opacity: 1;
 }
@@ -15,6 +28,7 @@
   width: 100%;
   color: #f5f0f0;
   display: flex;
+  font-family: "Source Sans Pro", sans-serif;
 }
 .container a, .footer a, .header a {
   text-decoration: none;
@@ -33,25 +47,14 @@
   align-items: center;
   justify-content: center;
   padding: 50px;
-}
-
-.rotateOut {
-  transform: rotateY(180deg);
-  opacity: 0;
-  visibility: hidden;
-}
-
-.rotateIn {
-  transform: rotateY(0deg);
-  visibility: visible;
-  opacity: 1;
+  font-family: "Grandstander", cursive;
 }
 
 * {
   padding: 0px;
   margin: 0px;
-  font-family: "Source Sans Pro", sans-serif;
   text-decoration: none;
+  transition: all 0.5s;
 }
 
 /* HEADER */
@@ -73,7 +76,7 @@
   margin-right: 50px;
   align-items: center;
   display: flex;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .header__github--img {
@@ -123,7 +126,6 @@ em {
 
 .images__card {
   border: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.2);
   height: 400px;
   width: 350px;
   margin: 10px;
@@ -138,29 +140,31 @@ em {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s;
 }
 
 .images__card--mainDescription {
   margin-left: 20px;
-  transition: all 0.5s;
+  margin-right: 20px;
 }
 
 /* IMAGE ALL DATA */
 .images__card--allData {
-  margin-top: 20px;
-  margin-left: 20px;
   position: absolute;
-  height: 250px;
-  transition: all 0.5s;
+  margin: 20px;
+  width: 310px;
+  height: 360px;
+}
+
+.images__card--allData p {
+  margin-bottom: 5px;
+}
+
+.images__card--allData--origin--title {
+  margin-top: 20px;
 }
 
 .images__card--allData--origin--title ~ p {
   margin-left: 10px;
-}
-
-.images__card--allData p {
-  margin-bottom: 2px;
 }
 
 /* FOOTER */
@@ -181,6 +185,10 @@ em {
 
 /*  RESPONSIVE      */
 @media only screen and (max-width: 1200px) {
+  .header__title {
+    font-size: 15px;
+  }
+
   .resume__image {
     display: none;
   }

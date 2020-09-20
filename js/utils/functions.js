@@ -1,4 +1,5 @@
 function hide(index){
+    /* SHOWING ALL DATA ABOUT THE CHARACTER */
     let image = document.getElementById(`image__${index}`);
     let description = document.getElementById(`description__${index}`);
     let allData = document.getElementById(`allData__${index}`);
@@ -10,8 +11,13 @@ function hide(index){
 
     allData.classList.remove("rotateOut");
     allData.classList.add("rotateIn");
+
+
+    allData.parentElement.classList.add("descriptionIn");
+    allData.parentElement.classList.remove("descriptionOut");
 }
 function show(index){
+    /* SHOWING THE PICTURE */
     let image = document.getElementById(`image__${index}`);
     let description = document.getElementById(`description__${index}`);
     let allData = document.getElementById(`allData__${index}`);
@@ -23,4 +29,8 @@ function show(index){
 
     allData.classList.remove("rotateIn");
     allData.classList.add("rotateOut");
+
+
+    allData.parentElement.classList.remove("descriptionIn");
+    allData.parentElement.classList.add("descriptionOut");
 }

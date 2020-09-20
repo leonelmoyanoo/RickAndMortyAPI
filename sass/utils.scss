@@ -1,8 +1,22 @@
-.hide{
-    visibility: hidden;
-    opacity: 0;
+
+.descriptionIn{
+    background-color: $description;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 1);
 }
-.show{
+
+
+.descriptionOut{
+    box-shadow:$box-shadow;
+}
+
+/* EFECTS */
+.rotateOut{
+    transform: rotateY(180deg);
+    opacity: 0;
+    visibility: hidden;
+}
+.rotateIn{
+    transform: rotateY(0deg);
     visibility: visible;
     opacity: 1;
 }

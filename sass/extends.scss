@@ -5,6 +5,7 @@
     width: 100%;
     color: $words;
     display: flex;
+    font-family: "Source Sans Pro", sans-serif;
 
     a {
         text-decoration: none;
@@ -24,14 +25,5 @@
     align-items: center;
     justify-content: center;
     padding: 50px;
-}
-.rotateOut{
-    transform: rotateY(180deg);
-    opacity: 0;
-    visibility: hidden;
-}
-.rotateIn{
-    transform: rotateY(0deg);
-    visibility: visible;
-    opacity: 1;
+    font-family: 'Grandstander', cursive;
 }
