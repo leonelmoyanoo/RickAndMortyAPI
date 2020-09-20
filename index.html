@@ -12,9 +12,6 @@
     <!-- ICONS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <!-- JS -->
-    <script src="js/utils/randomArray.js"></script>
-    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -44,29 +41,7 @@
             <img id="randomImage" src="https://rickandmortyapi.com/api/character/avatar/38.jpeg" alt="Random Image">
         </div>
     </section>
-    <section class="images">
-        <div class="images__card">
-            <img src="https://rickandmortyapi.com/api/character/avatar/38.jpeg" class="images__card--character"
-                alt="Image 1">
-            <div class="images__card--mainDescription">
-                <p class="images__card--mainDescription--name">Name: </p>
-                <p class="images__card--mainDescription--universe">Location: </p>
-            </div>
-
-            <div class="images_card--allData hide">
-                <p class="images_card--allData--name">Name: </p>
-                <p class="images_card--allData--status">Status: </p>
-                <p class="images_card--allData--specie">Specie: </p>
-                <p class="images_card--allData--origin">Origin: </p>
-                <p class="images_card--allData--location">Location: </p>
-                <div class="images_card--allData--origin">
-                    <h2 class="images_card--allData--origin--title">First chapter</h2>
-                    <p class="images_card--allData--origin--chapter">Chapter: </p>
-                    <p class="images_card--allData--origin--name">Chapter Name: </p>
-                    <p class="images_card--allData--origin--date">Chapter date: </p>
-                </div>
-            </div>
-        </div>
+    <section class="images" id="images">
     </section>
     <footer class="footer">
         <div class="footer__social">
@@ -81,6 +56,11 @@
             </a>
         </div>
     </footer>
+    <!-- JS -->
+    <script src="js/utils/functions.js"></script>
+    <script src="js/utils/randomArray.js"></script>
+    <script src="js/utils/setCharacters.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

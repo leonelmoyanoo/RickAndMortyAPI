@@ -29,9 +29,11 @@
     transform: rotateY(180deg);
     opacity: 0;
     visibility: hidden;
+    height: 250px;
 }
 .rotateIn{
-    visibility: visible;
     transform: rotateY(0deg);
+    visibility: visible;
     opacity: 1;
+    height: 250px;
 }
