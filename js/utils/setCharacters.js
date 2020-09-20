@@ -29,7 +29,7 @@ let cardInit = `
 </div>
 `;
 
-
+/* GETTING ALEATORY CHARACTERS FROM THE API*/
 CHARACTERS.forEach(async (character, index) => {
     try {
         let response = await fetch(`${API.replace(":id", character)}`)
@@ -61,3 +61,4 @@ CHARACTERS.forEach(async (character, index) => {
         console.error(error);
     }
 });
+
