@@ -39,14 +39,12 @@
   transform: rotateY(180deg);
   opacity: 0;
   visibility: hidden;
-  height: 250px;
 }
 
 .rotateIn {
   transform: rotateY(0deg);
   visibility: visible;
   opacity: 1;
-  height: 250px;
 }
 
 * {
@@ -136,8 +134,6 @@ em {
 /* IMAGE CHARACTER AND DATA */
 .images__card--character {
   border: 1px solid black;
-  width: 250px;
-  height: 250px;
   margin: 20px;
   display: flex;
   justify-content: center;
