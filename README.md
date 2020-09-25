@@ -1,5 +1,5 @@
 # Rick and Morty-API
-*You can see on [RickAndMortyAPI](https://leonelmoyanoo.github.io/RickAndMortyAPI/http:// "RickAndMortyAPI")*
+*You can see on [RickAndMortyAPI](https://leonelmoyanoo.github.io/RickAndMortyAPI/ "RickAndMortyAPI")*
 ![](https://leonelmoyanoo.github.io/RickAndMortyAPI/img/rickandmortyAPI.png)
 ## About project
 - Showing 6 random characters from the serie with they description avery time you refresh the page.
